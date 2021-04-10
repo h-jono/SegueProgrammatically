@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L5r-o7-MmK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="P4q-2b-Kng">
+            <objects>
+                <viewController storyboardIdentifier="Second" id="L5r-o7-MmK" customClass="SecondViewController" customModule="RouterTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bqx-wc-DC1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avg-Hc-VUB">
+                                <rect key="frame" x="184" y="75" width="46" height="30"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rra-Hy-I1B">
+                                <rect key="frame" x="178" y="437.5" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrY-Zo-fZH">
+                                <rect key="frame" x="186" y="781" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBW-Ce-g0y">
+                                <rect key="frame" x="90" y="836" width="234" height="30"/>
+                                <state key="normal" title="CountUp"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SWq-tB-EQQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SWq-tB-EQQ" firstAttribute="trailing" secondItem="avg-Hc-VUB" secondAttribute="trailing" constant="184" id="0Uj-Zc-du1"/>
+                            <constraint firstItem="rra-Hy-I1B" firstAttribute="centerY" secondItem="Bqx-wc-DC1" secondAttribute="centerY" id="183-X1-4R3"/>
+                            <constraint firstItem="avg-Hc-VUB" firstAttribute="top" secondItem="SWq-tB-EQQ" secondAttribute="top" constant="31" id="7TX-ac-dCS"/>
+                            <constraint firstItem="SWq-tB-EQQ" firstAttribute="trailing" secondItem="DrY-Zo-fZH" secondAttribute="trailing" constant="186" id="Fdn-cz-In0"/>
+                            <constraint firstItem="avg-Hc-VUB" firstAttribute="leading" secondItem="SWq-tB-EQQ" secondAttribute="leading" constant="184" id="GBI-s6-fYg"/>
+                            <constraint firstAttribute="bottom" secondItem="TBW-Ce-g0y" secondAttribute="bottom" constant="30" id="Qs2-zT-O0K"/>
+                            <constraint firstItem="TBW-Ce-g0y" firstAttribute="leading" secondItem="SWq-tB-EQQ" secondAttribute="leading" constant="90" id="cyG-33-DBQ"/>
+                            <constraint firstItem="SWq-tB-EQQ" firstAttribute="trailing" secondItem="TBW-Ce-g0y" secondAttribute="trailing" constant="90" id="exI-ky-Oeo"/>
+                            <constraint firstItem="DrY-Zo-fZH" firstAttribute="leading" secondItem="SWq-tB-EQQ" secondAttribute="leading" constant="186" id="fE6-gJ-DN4"/>
+                            <constraint firstItem="SWq-tB-EQQ" firstAttribute="bottom" secondItem="DrY-Zo-fZH" secondAttribute="bottom" constant="60" id="ixE-H8-D5d"/>
+                            <constraint firstItem="rra-Hy-I1B" firstAttribute="centerX" secondItem="Bqx-wc-DC1" secondAttribute="centerX" id="wL6-Pj-hWU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="DrY-Zo-fZH" id="O4X-Y2-Zwi"/>
+                        <outlet property="countUpButton" destination="TBW-Ce-g0y" id="Yhu-Lh-dxE"/>
+                        <outlet property="nextButton" destination="avg-Hc-VUB" id="7l1-08-YpV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3S0-rh-F9o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8" y="-19"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
